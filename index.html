@@ -605,8 +605,13 @@
     })
   
     // add start
+    window.addEventListener('mouseup', (event) => {
+        if(event.target != burger && event.target.parentNode != burger){
+            burger.classList.toggle('change');
+            nav.classList.toggle("nav-appear");
 
-    // cookies
+        }
+    })
     
 </script>
 
